@@ -23,6 +23,12 @@ class DetailsScreen extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              FloatingActionButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Icon(Icons.arrow_back),
+              ),
             ],
           ),
         ),

@@ -35,10 +35,7 @@ class HomePageScreen extends StatelessWidget {
                   ),
                 ),
                 onPressed: (() {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: ((context) => DetailsScreen())));
+                  Navigator.of(context).pushNamed('/details_screen');
                 }),
                 child: Text(
                   "Click me",
